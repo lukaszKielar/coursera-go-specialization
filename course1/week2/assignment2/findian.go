@@ -12,7 +12,7 @@ func main() {
 
 	fmt.Print("Enter a string: ")
 	scanner := bufio.NewScanner(os.Stdin)
-	scanner.Scan() // use `for scanner.Scan()` to keep reading
+	scanner.Scan()
 	line = strings.ToLower(scanner.Text())
 
 	if strings.HasPrefix(line, "i") && strings.HasSuffix(line, "n") && strings.Contains(line, "a") {
